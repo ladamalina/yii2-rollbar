@@ -1,0 +1,17 @@
+{
+    "name": "ladamalina/yii2-rollbar",
+    "description": "Rollbar Yii2 Error Handler",
+    "keywords": ["rollbar", "ratchetio", "ratchet.io", "yii2", "error", "exception", "monitoring"],
+    "license": "MIT",
+    "homepage": "http://github.com/ladamalina/yii2-rollbar",
+    "authors": [
+        {
+            "name": "Nadezhda Ryabtsova",
+            "email": "nadezhdaryabtsova@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "rollbar/rollbar": "dev-master"
+    }
+}
