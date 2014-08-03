@@ -12,6 +12,12 @@
     ],
     "require": {
         "php": ">=5.4",
-        "rollbar/rollbar": "dev-master"
+        "rollbar/rollbar": "~0.9.7",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ladamalina\\yii2-rollbar\\": "src/"
+        }
     }
 }
