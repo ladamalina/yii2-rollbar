@@ -31,7 +31,7 @@ class RollbarComponent extends \yii\base\Object
                 'logger' => $this->logger,
                 'max_errno' => $this->maxErrno,
                 'base_api_url' => $this->baseApiUrl,
-                'root' => !empty($this->rootAlias) ? Yii::getAlias($this->rootAlias) : '',
+                'root' => !empty($this->rootAlias) ? \Yii::getAlias($this->rootAlias) : '',
             ],
             false,
             false
