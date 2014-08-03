@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ladamalina\\yii2-rollbar\\": "src/"
+            "ladamalina\\yii2_rollbar\\": "src/"
         }
     }
 }
