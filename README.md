@@ -1,5 +1,3 @@
-# Rollbar Yii2 Error Handler
-
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -67,3 +65,7 @@ console error handler (console/config/main-local.php for advanced app template):
   ],
 ],
 ```
+
+## Does it works?
+
+You can just write incorrect settings for database connection and refresh a site page or execute any console command. Rollbar issues will appear at the Dashboard in a few seconds.
