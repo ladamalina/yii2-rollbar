@@ -46,7 +46,7 @@ main-local.php (common/config/main-local.php for advanced app template):
 ],
 ```
 
-and finally app local config (frontend/config/main-local.php for advanced app template):
+web error handler (frontend/config/main-local.php for advanced app template):
 
 ```php
 'components' => [
@@ -57,4 +57,13 @@ and finally app local config (frontend/config/main-local.php for advanced app te
 ],
 ```
 
-## TBD: ConsoleErrorHandler
+console error handler (console/config/main-local.php for advanced app template):
+
+```php
+'components' => [
+  'errorHandler' => [
+      // handling uncaught PHP exceptions, execution and fatal errors
+      'class' => 'ladamalina\yii2_rollbar\ConsoleErrorHandler',
+  ],
+],
+```
