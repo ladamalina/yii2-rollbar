@@ -10,7 +10,7 @@ class RollbarComponent extends \yii\base\Object
     // optional
     public $environment;
     public $branch;
-    public $batched;
+    public $batched = false;
     public $batchSize;
     public $timeout;
     public $logger;
