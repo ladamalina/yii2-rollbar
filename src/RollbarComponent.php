@@ -35,12 +35,14 @@ class RollbarComponent extends \yii\base\Object
                 'person_fn' => function() {
                     $person_data = null;
 
-                    if (!\Yii::$app->user->isGuest) {
-                        $person_data = [
-                            'id' => \Yii::$app->user->id,
-                            'username' => \Yii::$app->user->identity->username,
-                            'email'   => \Yii::$app->user->identity->email,
-                        ];
+                    if (php_sapi_name() == 'cli') {
+                        if (!\Yii::$app->user->isGuest) {
+                            $person_data = [
+                                'id' => \Yii::$app->user->id,
+                                'username' => \Yii::$app->user->identity->username,
+                                'email'   => \Yii::$app->user->identity->email,
+                            ];
+                        }
                     }
 
                     return $person_data;
