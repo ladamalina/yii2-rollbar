@@ -2,7 +2,7 @@
 
 namespace ladamalina\yii2_rollbar;
 
-class RollbarComponent extends \yii\base\Object
+class RollbarComponent extends \yii\base\BaseObject
 {
     // required
     public $accessToken;
